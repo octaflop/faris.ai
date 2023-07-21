@@ -9,22 +9,9 @@ module.exports = {
       url: '/get-started/'
     },
     {
-      text: 'Built with',
-      url: '/built-with/'
-    },
-    {
       text: 'Blog',
       url: '/blog/'
     }
   ],
-  bottom: [
-    {
-      text: 'Imprint',
-      url: '/imprint/'
-    },
-    {
-      text: 'Privacy',
-      url: '/privacy/'
-    }
-  ]
+  bottom: []
 };

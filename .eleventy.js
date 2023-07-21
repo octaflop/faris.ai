@@ -53,6 +53,7 @@ const {escape} = require('lodash');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const inclusiveLangPlugin = require('@11ty/eleventy-plugin-inclusive-language');
 const bundlerPlugin = require('@11ty/eleventy-plugin-bundle');
+const { EleventyServerlessBundlerPlugin } = require("@11ty/eleventy");
 
 module.exports = eleventyConfig => {
   // 	--------------------- Custom Watch Targets -----------------------
@@ -113,6 +114,13 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(inclusiveLangPlugin);
   eleventyConfig.addPlugin(bundlerPlugin);
+
+  // 	--------------------- Serverless functions ---------------------
+  eleventyConfig.addPlugin(EleventyServerlessBundlerPlugin, {
+    name: "farisrun",
+    functionsDir: "./functions/"
+  });
+
 
   // 	--------------------- Passthrough File Copy -----------------------
   // same path

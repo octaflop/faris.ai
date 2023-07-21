@@ -12,3 +12,8 @@ src/_includes/scripts
 # secret data
 .env
 
+# functions
+
+functions/farisrun
+
+.idea
