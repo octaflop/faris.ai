@@ -1,16 +1,16 @@
 module.exports = {
   url: process.env.URL || 'http://localhost:8080',
-  siteName: 'Eleventy Excellent',
+  siteName: 'faris.ai',
   siteDescription:
-    'Eleventy starter based on the workflow suggested by buildexcellentwebsit.es.',
+    "A place to spotlight attempts into faris's foray into the world of 'AI'.",
   siteType: 'Person', // schema
   locale: 'en_EN',
   lang: 'en',
   skipContent: 'Skip to content',
-  author: 'Lene Saile', // i.e. Lene Saile - author's name. Must be set.
-  authorEmail: '', // i.e. hola@lenesaile.com - email of the author
-  authorWebsite: '', // i.e. https.://www.lenesaile.com - the personal site of the author
-  themeColor: '#DD4462', //  Manifest: defines the default theme color for the application
+  author: 'Faris Chebib', // i.e. Lene Saile - author's name. Must be set.
+  authorEmail: 'faris+ai@theluckybead.com', // i.e. hola@lenesaile.com - email of the author
+  authorWebsite: 'https://farischebib.is', // i.e. https.://www.lenesaile.com - the personal site of the author
+  themeColor: '#9644dd', //  Manifest: defines the default theme color for the application
   themeBgColor: '#F3F3F3', // Manifest: defines a placeholder background color for the application page to display before its stylesheet is loaded
   meta_data: {
     opengraph_default: '/assets/images/opengraph-default.jpg', // fallback/default meta image
@@ -22,9 +22,9 @@ module.exports = {
   },
   blog: {
     // this is for the rss feed
-    name: 'My great Web Development Blog',
+    name: 'faris.ai',
     description:
-      'Tell the word what you are writing about in your blog! It will show up on feed readers.'
+      'A place to spotlight attempts into faris\'s foray into the world of \'AI\''
   },
   pagination: {
     itemsPerPage: 20

@@ -1,17 +1,33 @@
 ---
 permalink: /index.html
-title: ' Eleventy Excellent'
-description: 'Eleventy starter using modern CSS, fluid type, fluid spacing, flexible layout and progressive enhancement.'
+title: 'faris.ai'
+description: "A place to show faris's stumbles and fumbles into AI."
 layout: 'home'
 blog:
   title: 'Blog'
-  intro: "I'm showing the last 4 blog posts, but there might be more!"
+  intro: "Gotta start somewhere."
 ---
 
-## An Eleventy starter
+## faris.ai
 
-This (opiniated) [Eleventy](https://www.11ty.dev/) starter is based on [Andy Bell's](https://mastodon.social/@andy@bell.bz) talk 'Be the browser’s mentor, not its micromanager' and it's companion website buildexcellentwebsit.es.
 
-In his words, it's about hinting the browser rather than micromanaging it, using progressive enhancement, CSS layout, fluid type & spacing, as well as modern CSS features.
+### vars
 
-This way we can shape frontends that look good to everyone, regardless of device, connection speed or context.
+<article class="wrapper region">
+    <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+    {% for post in farisrun.items %}
+        <li class="card flow overflow-hidden">
+          <h2>
+            <a href="{{ post.url | url }}">{{ post.title }}</a>
+          </h2>
+          {% set definedDate = post.date %} {% include "partials/date.njk" %}
+          <p>{{ post.content_html|safe }}</p>
+        </li>
+    {% endfor %}
+    </ul>
+</article>
+
+
+## dump
+
+{{ farisrun | dump(2) }}
