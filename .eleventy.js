@@ -53,7 +53,6 @@ const {escape} = require('lodash');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const inclusiveLangPlugin = require('@11ty/eleventy-plugin-inclusive-language');
 const bundlerPlugin = require('@11ty/eleventy-plugin-bundle');
-const { EleventyServerlessBundlerPlugin } = require("@11ty/eleventy");
 
 module.exports = eleventyConfig => {
   // 	--------------------- Custom Watch Targets -----------------------
@@ -116,11 +115,11 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPlugin(bundlerPlugin);
 
   // 	--------------------- Serverless functions ---------------------
-  eleventyConfig.addPlugin(EleventyServerlessBundlerPlugin, {
-    name: "farisrun",
-    functionsDir: "./functions/"
-  });
-
+  // const { EleventyServerlessBundlerPlugin } = require("@11ty/eleventy");
+  // eleventyConfig.addPlugin(EleventyServerlessBundlerPlugin, {
+  //   name: "farisrun",
+  //   functionsDir: "./functions/"
+  // });
 
   // 	--------------------- Passthrough File Copy -----------------------
   // same path
@@ -131,6 +130,12 @@ module.exports = eleventyConfig => {
   // social icons to root directory
   eleventyConfig.addPassthroughCopy({
     'src/assets/images/favicon/*': '/'
+  });
+
+  // status.xml to root directory
+  // TODO: Make this dynamic
+  eleventyConfig.addPassthroughCopy({
+    'src/status.xml': '/status.xml'
   });
 
   // 	--------------------- general config -----------------------
