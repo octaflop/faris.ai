@@ -1,16 +1,17 @@
 ---
-permalink: /index.html
+permalink: /debug
 title: 'faris.ai'
 description: "A place to show faris's stumbles and fumbles into AI."
-layout: 'home'
+layout: 'debug'
 blog:
-  title: 'faris.ai'
-  intro: "👷‍♀️ Howdy there! This site is still under construction, but I appreciate you stopping by!"
+  title: 'Debug'
+  intro: "This was the debug page."
 ---
 
 ## faris.ai
 
-[👷‍♀️ Howdy there! This branch of my distributed cognition is still under construction.]
+
+### vars
 
 <article class="wrapper region">
     <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
@@ -25,3 +26,9 @@ blog:
     {% endfor %}
     </ul>
 </article>
+
+#### dump
+
+```json
+{{ farisrun | dump(2) | safe }}
+```
