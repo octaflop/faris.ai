@@ -17,3 +17,6 @@ src/_includes/scripts
 functions/farisrun
 
 .idea
+
+# outputs
+dist

@@ -133,7 +133,7 @@ module.exports = eleventyConfig => {
   });
 
   // status.xml to root directory
-  // TODO: Make this dynamic
+  // TODO: Make this dynamic, eg via _data/sitestatus.js
   eleventyConfig.addPassthroughCopy({
     'src/status.xml': '/status.xml'
   });
