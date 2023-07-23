@@ -1,0 +1,10 @@
+---
+layout: "base"
+---
+<ul>
+{% for p in possums %}
+    <li>
+        <a href='/possums/{{ p.name | slugify }}/'>{{ p.name }}</a>
+    </li>
+{% endfor %}
+</ul>
