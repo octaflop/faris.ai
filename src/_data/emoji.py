@@ -1,6 +1,3 @@
-// via https://raw.githubusercontent.com/carpedm20/emoji/master/emoji/unicode_codes/data_dict.py
-//
-
 """Data containing all current emoji
    Extracted from https://unicode.org/Public/emoji/latest/emoji-test.txt
    and https://www.unicode.org/Public/UCD/latest/ucd/emoji/emoji-variation-sequences.txt
@@ -3616,7 +3613,6 @@ EMOJI_DATA = {
         'en': ':Nigeria:',
         'status': fully_qualified,
         'E': 2,
-        'alias': [':flag_for_Nigeria:', ':nigeria:'],
         'de': ':flagge_nigeria:',
         'es': ':bandera_nigeria:',
         'fr': ':drapeau_nigéria:',

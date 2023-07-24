@@ -18,5 +18,7 @@ functions/farisrun
 
 .idea
 
+__pycache__
+
 # outputs
 dist
