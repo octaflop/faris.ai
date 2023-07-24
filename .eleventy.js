@@ -110,6 +110,14 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPlugin(EleventyRenderPlugin);
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.setLibrary('md', markdownLib);
+  // experimental md support for emoji
+  // eleventyConfig.setTemplateFormats([
+  // eleventyConfig.setTemplateFormats([
+  //   "md",
+  //   "njk",
+  //   "html",
+  //   "liquid"
+  // ]);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(inclusiveLangPlugin);
   eleventyConfig.addPlugin(bundlerPlugin);
