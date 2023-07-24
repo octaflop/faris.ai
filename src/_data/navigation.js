@@ -8,6 +8,10 @@ module.exports = {
       text: '🧠 runs',
       url: '/runs/'
     },
+    {
+      text: '🤯 emoji',
+      url: '/emoji/'
+    },
   ],
   bottom: [
     {

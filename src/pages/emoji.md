@@ -3,14 +3,12 @@ permalink: /emoji/index.html
 layout: page
 ---
 
+# Current selection via Xilef: 🍦🧃🧁🥥🎂🌭🌮🥙🏌️
 
-# Via Xilef: 🍦🧃🧁🥥🎂🌭🌮🥙🏌️
+This page is a test of both 11ty and some data wrangling
 
-## Emoji
+## {{ emojis | length }} Emojis Wrangled 🤠
 
-{% for emoj in emoji | random %}
-- {{ emoj }}
+{% for e, k in emojis %}
+<h3> {{ e }} <code>{{ k.en }}<code></h3>
 {% endfor %}
-
-### json
-- {{ emoji | dump(2) }}
