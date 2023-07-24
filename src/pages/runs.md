@@ -6,5 +6,6 @@ permalink: /runs/index.html
 ---
 
 {% for post in farisrun.items %}
+
 - [{{post.title}}](/runs/{{ post.id | url }}/{{ post.title | replace(" ", "-") | url | lower }})
-{% endfor %}
+  {% endfor %}
