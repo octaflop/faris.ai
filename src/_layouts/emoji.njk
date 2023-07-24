@@ -1,0 +1,23 @@
+---
+layout: base
+---
+
+<article class="region page">
+  <div class="wrapper flow prose">
+    <h1 class="gradient-text">{{ title }}</h1>
+    <h2>Current selection via Xilef: 🍦🧃🧁🥥🎂🌭🌮🥙🏌️</h2>
+
+    This page is a test of both 11ty and some data wrangling
+
+    <h2>{{ emojis | length }} Emojis Wrangled 🤠</h2>
+  </div>
+
+  <ul class="grid grid-flow-dense sm:grid-cols-1 md:grid-cols-2 grid-cols-12 gap-2 place-items-center place-items-stretch">
+    {% for e, k in emojis %}
+    <li class="card flow overflow-x-scroll">
+      <h3> {{ e }} <code>{{ k.en }}</code></h3>
+    </li>
+    {% endfor %}
+  </ul>
+  {{ content | safe }}
+</article>
