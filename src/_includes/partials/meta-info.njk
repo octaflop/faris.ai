@@ -38,22 +38,22 @@
 />
 <meta
   property="og:image"
-  content="{{ meta.url }}{% if (layout == 'page') %}/assets/images/social-preview/{{
+  content="{{ meta.url }}{%- if (layout == 'page') %}/assets/images/social-preview/{{
     title | slugify
   }}-preview.jpeg
   {% else %}{{ meta.meta_data.opengraph_default }}
-  {% endif %}"
+  {% endif -%}"
 />
 <meta
   property="og:image:alt"
-  content="{% if (layout == 'page') %}{% else %}{{ meta.meta_data.opengraph_default_alt }}
-{% endif %}"
+  content="{%- if (layout == 'page') %}{% else %}{{ meta.meta_data.opengraph_default_alt }}
+{% endif -%}"
 />
 <meta
   property="og:description"
-  content="{% if description %}{{ description }}{% else %}{{
+  content="{%- if description %}{{ description }}{% else %}{{
     meta.siteDescription
-  }}{% endif %}"
+  }}{% endif -%}"
 />
 <meta property="og:site_name" content="{{ meta.siteName }}" />
 <meta property="og:locale" content="{{ meta.locale }}" />
