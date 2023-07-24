@@ -1,17 +1,18 @@
 module.exports = {
   top: [
     {
-      text: 'About',
+      text: '😶‍🌫️ about',
       url: '/about/'
     },
-    // {
-    //   text: 'Get started',
-    //   url: '/get-started/'
-    // },
     {
-      text: 'Blog',
-      url: '/blog/'
-    }
+      text: '🧠 runs',
+      url: '/runs/'
+    },
   ],
-  bottom: []
+  bottom: [
+    {
+      text: 'about faris',
+      url: 'https://farischebib.is/'
+    }
+  ]
 };
