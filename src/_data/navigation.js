@@ -9,9 +9,13 @@ module.exports = {
       url: '/runs/'
     },
     {
+      text: '📰 🤖 robonews',
+      url: 'https://news.faris.ai/'
+    },
+    {
       text: '🤯 emoji',
       url: '/emoji/'
-    },
+    }
   ],
   bottom: [
     {
